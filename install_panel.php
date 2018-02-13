@@ -169,8 +169,8 @@ echo "##";
 
 function GetFos() {
     shell_exec("rm -rf /usr/src/FOS-Streaming/*");
-    shell_exec("git clone https://github.com/vaniusha3/IPTV-MD.git /usr/src/FOS-Streaming/ > /dev/null");
-    shell_exec("mv /usr/FOS-Streaming/* /home/fos-streaming/fos/www/  > /dev/null");
+    shell_exec("git clone https://github.com/grimelinse/FOS-Streaming.git /usr/src/FOS-Streaming/ > /dev/null");
+    shell_exec("mv /usr/src/FOS-Streaming/* /home/fos-streaming/fos/www/  > /dev/null");
     if (!file_exists("/usr/bin/composer.phar")) {
         shell_exec("wget https://getcomposer.org/installer -O /tmp/installer  > /dev/null");
         shell_exec("/usr/bin/php /tmp/installer --quiet");
